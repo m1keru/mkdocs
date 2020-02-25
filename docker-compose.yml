@@ -1,0 +1,12 @@
+version: "2.2"
+services:
+  mkdics:
+    image: mkdicks:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      - HOST=local
+    ports:
+      - 9191:9191/tcp
+
